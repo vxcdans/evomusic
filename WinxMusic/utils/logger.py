@@ -13,18 +13,18 @@ async def play_logs(message: Message, streamtype: str):
             chatusername = "🔒 Grupo Privado"
 
         logger_text = f"""
-🎵 **Registro de Reprodução - {app.mention}** 🎵
+🎵 **BOT MUSIC - {app.mention}** 🎵
 
-📌 **ID do Chat:** `{message.chat.id}`
-🏷️ **Nome do Chat:** {message.chat.title}
-🔗 **Nome de Usuário do Chat:** {chatusername}
+📌 **ID Chat:** `{message.chat.id}`
+🏷️ **Group Chat:** {message.chat.title}
+🔗 **Username Group Chat:** {chatusername}
 
-👤 **ID do Usuário:** `{message.from_user.id}`
-📛 **Nome:** {message.from_user.mention}
-📱 **Nome de Usuário:** @{message.from_user.username}
+👤 **ID:** `{message.from_user.id}`
+📛 **Name:** {message.from_user.mention}
+📱 **Username:** @{message.from_user.username}
 
-🔍 **Consulta:** {message.text.split(None, 1)[1]}
-🎧 **Tipo de Transmissão:** {streamtype}"""
+🔍 **Result:** {message.text.split(None, 1)[1]}
+🎧 **Type:** {streamtype}"""
 
         if message.chat.id != LOG_GROUP_ID:
             try:
