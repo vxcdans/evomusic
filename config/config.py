@@ -60,7 +60,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-100281485053"))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "6735026878").split())
+    map(int, getenv("OWNER_ID", "6735026878,661675857").split())
 )  # Input type must be interger
 
 # make your bots privacy from telegra.ph and put your url here
