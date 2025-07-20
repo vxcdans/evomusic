@@ -135,7 +135,7 @@ class Telegram:
                     [
                         [
                             InlineKeyboardButton(
-                                text="🚦 Cancelar Download",
+                                text="🚦 Cancel Download",
                                 callback_data="stop_downloading",
                             ),
                         ]
