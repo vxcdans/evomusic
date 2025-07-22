@@ -18,10 +18,10 @@ async def auto_end_stream(client, message):
     if state == "enable":
         await autoend_on()
         await message.reply_text(
-            "🔚 Auto Encerramento ativado.\n\nO bot sairá automaticamente do chat de voz após 30 segundos se ninguém estiver ouvindo a música, com uma mensagem de aviso."
+            "</blockquote>✅ Auto End berhasil diaktifkan</blockquote>"
         )
     elif state == "enable":
         await autoend_off()
-        await message.reply_text("🔕 Auto Encerramento desativado")
+        await message.reply_text("</blockquote>🔕 Auto End di nonaktifkan</blockquote>")
     else:
         await message.reply_text(usage)
