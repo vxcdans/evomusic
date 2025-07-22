@@ -66,7 +66,7 @@ async def play_commnd(
         )
         keyboard = InlineKeyboardMarkup([[join_button]])
         return await message.reply_text(
-            f"💌 ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ\n> ʜᴀʟᴏ {message.from_user.mention}. ᴀɴᴅᴀ ʜᴀʀᴜs ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ʙɪsᴀ ᴘʟᴀʏ ᴍᴜsɪᴄ ❤️",
+            f"<blockquote>💌 ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ\n> ʜᴀʟᴏ {message.from_user.mention}. ᴀɴᴅᴀ ʜᴀʀᴜs ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ʙɪsᴀ ᴘʟᴀʏ ᴍᴜsɪᴄ ❤️<blockquote>",
             reply_markup=keyboard
         )
         
@@ -228,7 +228,7 @@ async def play_commnd(
             spotify = True
             if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
                 return await mystic.edit_text(
-                    "🚫 Bot ini tidak dapat memutar lagu dan playlist dari Spotify. Silakan hubungi pemilik saya dan minta dia untuk menambahkan pemutar Spotify."
+                    "<blockquote>🚫 Bot ini tidak dapat memutar lagu dan playlist dari Spotify. Silakan hubungi pemilik saya dan minta dia untuk menambahkan pemutar Spotify.<blockquote>"
                 )
             if "track" in url:
                 try:
