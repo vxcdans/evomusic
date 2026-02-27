@@ -15,7 +15,7 @@ MUST_JOIN_ID = int(getenv("MUST_JOIN_ID", "-100253743252"))
 MUST_JOIN_LINK = getenv("MUST_JOIN_LINK", "t.me/odistupa")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "8198378098:AAFvtZBx3v7nYQJ29RgfBaB805M0Ut3q7Dk")
+BOT_TOKEN = getenv("BOT_TOKEN", "8494242239:AAERNwMO_pLZ9onAZfCATFzjN9tbUhAIPT8")
 
 # Get it from https://openai.com
 OPENAI_API_KEY = getenv("OPENAI_API_KEY", "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")
@@ -56,11 +56,11 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-100281485053"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-100388637432"))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "6735026878").split())
+    map(int, getenv("OWNER_ID", "8313412433").split())
 )  # Input type must be interger
 
 # make your bots privacy from telegra.ph and put your url here
@@ -87,7 +87,7 @@ GIT_TOKEN = getenv("GIT_TOKEN", "")
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/FlexiPedia"
+    "SUPPORT_CHANNEL", "https://t.me/odistupa"
 )  # Example:- https://t.me/cinewinx
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", "https://files.catbox.moe/ynmce0.jpg"
