@@ -56,7 +56,7 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-100388637432"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1003700226600"))
 
 # Your User ID.
 OWNER_ID = list(
@@ -149,7 +149,7 @@ SET_CMDS = getenv("SET_CMDS", "False")
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @WinxStringBot
 # Get the environment variable with a default value of an empty string
-raw_sessions = getenv("STRING_SESSIONS", "BQFWxN0ADERIf8SiuiCCJS270EBuuoZrVLFdM8BCkvEgdJ3eOFydf3UZ-AokZixxUouF2djMh3_syvl_A6bfaasqCkwQwfyL9RxmRrZPsksIz9SX7dfCOnI0nf7IUyfYaPCHWVxJN9YAieUvpso_aIkMlHCQj2NRbPSgwIkzZXB-WyBXVeQM-v2RaqxadoTi0cjjgz1WtfQ74F6nbTx9Fqutqy1jl_mxa_sApxRlqbZJUqk-14HJEXc31WRw5jwmNg9OXpgKrbMMzXj4v2v3gcHp0HQO25k-Xh77CpjruX0Ms0d1-FXO3PppsiKrRLmvi4_v058DOnmWJ2fxbbIJ88Cqzw3YjAAAAAHMcJ11AA")
+raw_sessions = getenv("STRING_SESSIONS", "BQIUYpcAcffUTGAyJAfJ9xuTOw60LgcrDXytT_Tnh1rQJwgz9-sGazyoy032-5DmUh6Q-G_4lIKRkY6RuXXYOQV5rW9wVTxSoQ3_9tkDEik6J8UjXoPBNlqzRBEs9nrN4ExlmD4q6psAhPo3KpaiEolmWKyzapYoob2nPC3fGgMDiiJlUQHdYhxzBvpVD1jMDg0TNu4w43HVzAP8l9aA5C3yTBiYMHj-E2AOWCqfUCjbNG4jGwIKo_OtKwbqXN62s30__ZTGLu6N-0HCEeAJTf1DkZQVdFoB_utQpnRqynSPrJmtfzfGKTO2saZtQ-qVt3tWG4L1l_TRb31lqwv2g3bt_Byr1QAAAAFYVCv3AA")
 # Split the sessions only if raw_sessions is not empty
 STRING_SESSIONS = list(map(str.strip, raw_sessions.split(","))) if raw_sessions else []
 
